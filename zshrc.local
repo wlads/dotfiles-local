@@ -19,7 +19,7 @@ source /Users/wladimir/.asdf/asdf.sh
 # export PATH=$PATH:$GOPATH/bin
 
 # Java
-# export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Scripts
 # export PATH=$PATH:~/Projects/Scripts/Util
