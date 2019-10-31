@@ -1,6 +1,6 @@
 export PATH="$HOME/.bin:$PATH"
 source $HOME/.asdf/asdf.sh
-# source $HOME/.asdf/completions/asdf.bash
+source $HOME/.asdf/completions/asdf.bash
 
 # Virtualenv/VirtualenvWrapper
 # export WORKON_HOME=~/.virtualenvs
@@ -21,6 +21,11 @@ source $HOME/.asdf/asdf.sh
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
+# Config Java's manpath
+# https://stackoverflow.com/questions/30274874/how-to-install-custom-man-manual-pages-on-mac-os-x/30275652#30275652
+# https://www.skepticism.us/posts/2015/10/mac-os-x-man-command-ignores-manpath-which-sucks-for-homebrew-installed-commands/
+# Test /etc/manpaths.d
+# JDK 13: /Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/man
 
 # Scripts
 # export PATH=$PATH:~/Projects/Scripts/Util
