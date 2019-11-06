@@ -14,3 +14,9 @@ inoremap jk <esc>
 nmap <F3> i<C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
 imap <F3> <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR>
 
+set relativenumber
+
+" configure mouse support
+" https://unix.stackexchange.com/questions/50733/cant-use-mouse-properly-when-running-vim-in-tmux
+set ttymouse=xterm2
+set mouse=a
