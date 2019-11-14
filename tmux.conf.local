@@ -13,3 +13,8 @@ bind ^A select-pane -t :.+
 
 # configure mouse scroll
 set -g mouse on
+
+# Tmux Plugin Manager
+# https://github.com/tmux-plugins/tpm
+# Tips
+# https://www.sitepoint.com/10-killer-tmux-tips/
