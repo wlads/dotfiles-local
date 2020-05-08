@@ -44,5 +44,5 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # Alternative to Oh-my-zsh
 # https://linhmtran168.github.io/blog/2013/12/15/ditching-oh-my-zsh-for-prezto/
 
-# Homebrew
-export HOMEBREW_GITHUB_API_TOKEN=
+# load tokens
+[[ -f ~/.tokens.local ]] && source ~/.tokens.local
