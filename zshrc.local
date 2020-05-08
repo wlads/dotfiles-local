@@ -10,6 +10,9 @@ source $HOME/.asdf/completions/asdf.bash
 # export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 # export ANDROID_HOME=$HOME/Library/Android/sdk
 
+# Mysql
+export PATH=$PATH:/usr/local/mysql/bin
+
 # BB Warsaw
 # https://macmagazine.uol.com.br/2017/11/18/o-modulo-de-seguranca-de-bancos-pode-estar-detonando-o-seu-mac-saiba-como-so-ativa-lo-quando-necessario-neste-tutorial/
 # alias bb_enable="sudo launchctl load -F $HOME/Projects/Scripts/BB/LaunchDaemons_com.diebold.warsaw.plist"
