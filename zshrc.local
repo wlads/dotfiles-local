@@ -45,4 +45,4 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 # https://linhmtran168.github.io/blog/2013/12/15/ditching-oh-my-zsh-for-prezto/
 
 # Homebrew
-export HOMEBREW_GITHUB_API_TOKEN=175c1304cbfad5405a0c8b4ac17d70b9e9ba96ea
+export HOMEBREW_GITHUB_API_TOKEN=
