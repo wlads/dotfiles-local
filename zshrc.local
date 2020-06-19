@@ -1,6 +1,10 @@
 export PATH="$HOME/.bin:$PATH"
 source $HOME/.asdf/asdf.sh
-source $HOME/.asdf/completions/asdf.bash
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit
 
 # Virtualenv/VirtualenvWrapper
 # export WORKON_HOME=~/.virtualenvs
