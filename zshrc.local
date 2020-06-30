@@ -50,3 +50,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 # load tokens
 [[ -f ~/.tokens.local ]] && source ~/.tokens.local
+
+# aliases
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
