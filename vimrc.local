@@ -1,6 +1,11 @@
 " theme configuration
-set background=dark
-colorscheme solarized8
+" ***************************** solarized dark
+" set background=dark
+" colorscheme solarized8
+" ***************************** dracula
+" packadd! dracula
+syntax enable
+colorscheme dracula
 
 " escape in command mode
 cnoremap kj <C-C>
