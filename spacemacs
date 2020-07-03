@@ -153,7 +153,8 @@ values."
    ;; with 2 themes variants, one dark and one light)
    ;; dotspacemacs-themes '(spacemacs-dark
    ;;                       spacemacs-light)
-   dotspacemacs-themes '(sanityinc-solarized-dark
+   dotspacemacs-themes '(spacemacs-dark
+                         sanityinc-solarized-dark
                          sanityinc-solarized-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t

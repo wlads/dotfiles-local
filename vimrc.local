@@ -31,3 +31,6 @@ augroup END
 " https://unix.stackexchange.com/questions/50733/cant-use-mouse-properly-when-running-vim-in-tmux
 set ttymouse=xterm2
 set mouse=a
+
+" :set guifont show font selected in Tools->Fonts
+set guifont=DankMono-Regular:h15
