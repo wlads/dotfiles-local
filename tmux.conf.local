@@ -1,12 +1,17 @@
+# default prefix to Control + s
+# quick pane cycling
+unbind ^S
+bind ^S select-pane -t :.+
+
 # remap prefix to Control + a
 # set -g prefix C-a
 # unbind C-b
 # bind C-a send-prefix
 
-# quick pane cycling
-unbind ^S
-bind ^S select-pane -t :.+
-
+# remap prefix to Control + h
+# unbind C-b
+# set-option -g prefix C-h
+# bind-key C-h send-prefix
 
 # force a reload of the config file
 unbind r
