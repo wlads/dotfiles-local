@@ -15,8 +15,10 @@ colorscheme dracula_pro
 " configure italic on comments
 " highlight Comment cterm=italic
 
-" if iterm2 (terminal with truecolor)
-" set termguicolors
+" if terminal support truecolor (iterm2 and alacritty)
+" if has("termguicolors")
+"   set termguicolors
+" endif
 
 " escape in command mode
 cnoremap kj <C-C>
