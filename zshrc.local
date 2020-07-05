@@ -6,6 +6,11 @@ fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit
 compinit
 
+# configure italic support in terminal
+# https://www.reddit.com/r/vim/comments/24g8r8/italics_in_terminal_vim_and_tmux/
+# https://hobo.house/2017/07/17/using-italics-with-vim-in-your-terminal/
+export TERM=xterm-256color-italic
+
 # Virtualenv/VirtualenvWrapper
 # export WORKON_HOME=~/.virtualenvs
 # export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3

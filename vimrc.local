@@ -7,7 +7,16 @@
 " packadd! dracula_pro
 syntax enable
 let g:dracula_colorterm = 0
+" https://github.com/dracula/vim/issues/65
+" let g:dracula_italic = 0
 colorscheme dracula_pro
+" highlight Normal ctermbg=None
+
+" configure italic on comments
+" highlight Comment cterm=italic
+
+" if iterm2 (terminal with truecolor)
+" set termguicolors
 
 " escape in command mode
 cnoremap kj <C-C>
@@ -20,6 +29,10 @@ inoremap jk <esc>
 " print date/time
 nmap <F3> i<C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
 imap <F3> <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR>
+
+" enable hlsearch (disable temporarily :noh or permanent F10)
+set hlsearch
+nnoremap <F10> :set hlsearch!<CR>
 
 " set relativenumber
 set number relativenumber
