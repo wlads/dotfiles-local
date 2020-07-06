@@ -1,3 +1,5 @@
+set nocompatible
+
 " theme configuration
 " ***************************** solarized dark
 " set background=dark

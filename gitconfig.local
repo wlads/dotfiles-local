@@ -1,3 +1,6 @@
 [user]
   name = Wladimir Braguini Domingues
   email = wladimir.braguini@gmail.com
+[pull]
+  rebase = false
+  ff = only
