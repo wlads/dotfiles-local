@@ -32,12 +32,24 @@ export PATH=$PATH:/usr/local/mysql/bin
 # export PATH=$PATH:$GOPATH/bin
 
 # Java
+# Define Java version to use
+# https://upokary.com/how-to-switch-java-versions-in-mac-os/
+# https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-os-x
+# https://gist.github.com/hogmoru/8e02cf826c840914a8ed93fd418ed88e
 export JAVA_HOME=$(/usr/libexec/java_home)
+# list available jdks
+alias jdks="/usr/libexec/java_home -V"
+alias jdk8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+alias jdk8o="export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_232`; java -version"
+alias jdk13="export JAVA_HOME=`/usr/libexec/java_home -v 13`; java -version"
+alias jdk14="export JAVA_HOME=`/usr/libexec/java_home -v 14`; java -version"
 # Config Java's manpath
 # https://stackoverflow.com/questions/30274874/how-to-install-custom-man-manual-pages-on-mac-os-x/30275652#30275652
 # https://www.skepticism.us/posts/2015/10/mac-os-x-man-command-ignores-manpath-which-sucks-for-homebrew-installed-commands/
 # Test /etc/manpaths.d
 # JDK 13: /Library/Java/JavaVirtualMachines/jdk-13.0.1.jdk/Contents/Home/man
+
+# opensnoop
 
 # Scripts
 # export PATH=$PATH:~/Projects/Scripts/Util
