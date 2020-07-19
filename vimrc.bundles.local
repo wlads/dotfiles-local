@@ -3,3 +3,4 @@ Plug 'lifepillar/vim-solarized8'
 " Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'wlads/dracula_pro'
 " https://github.com/python-mode/python-mode
+Plug 'tyru/open-browser.vim'

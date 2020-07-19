@@ -54,5 +54,12 @@ set mouse=a
 " :set guifont show font selected in Tools->Fonts
 set guifont=DankMono-Regular:h15
 
+" problems with gx to open browser under cursor
+" https://github.com/vim/vim/issues/4738
+" remap to Open Browser plugin
+let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap gx <Plug>(openbrowser-smart-search)
+vmap gx <Plug>(openbrowser-smart-search)
+
 " Other plugins
 " https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9
