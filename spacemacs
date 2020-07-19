@@ -51,6 +51,7 @@ values."
      git
      markdown
      org
+     ;; multiple-cursors
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -154,9 +155,9 @@ values."
    ;; with 2 themes variants, one dark and one light)
    ;; dotspacemacs-themes '(spacemacs-dark
    ;;                       spacemacs-light)
-   dotspacemacs-themes '(zenburn
+   dotspacemacs-themes '(sanityinc-solarized-dark
+                         zenburn
                          spacemacs-dark
-                         sanityinc-solarized-dark
                          sanityinc-solarized-light)
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
