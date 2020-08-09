@@ -63,3 +63,9 @@
 
 ;; https://github.com/hlissner/doom-emacs/blob/develop/docs/api.org#center-emacs-initial-frame-with-a-fixed-size
 ;; (setq default-frame-alist '((left . 0) (width . 141) (fullscreen . fullheight)))
+
+(map! :leader
+      (:prefix ("s" . "search")
+       :desc "Clear search highlight" "c" #'evil-ex-nohighlight))
+
+;;; config.el ends here
