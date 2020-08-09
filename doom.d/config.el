@@ -56,6 +56,10 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+(map! :leader
+      (:prefix ("s" . "search")
+       :desc "Clear search highlight" "c" #'evil-ex-nohighlight))
+
 ;; Configure mspyls
 ;; https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/python/README.org
 (after! lsp-python-ms
@@ -64,8 +68,12 @@
 ;; https://github.com/hlissner/doom-emacs/blob/develop/docs/api.org#center-emacs-initial-frame-with-a-fixed-size
 ;; (setq default-frame-alist '((left . 0) (width . 141) (fullscreen . fullheight)))
 
-(map! :leader
-      (:prefix ("s" . "search")
-       :desc "Clear search highlight" "c" #'evil-ex-nohighlight))
+;; https://tecosaur.github.io/emacs-config/config.html
+;; (defun doom-modeline-conditional-buffer-encoding ()
+;;   "We expect the encoding to be LF UTF-8, so only show the modeline when this is not the case"
+;;   (setq-local doom-modeline-buffer-encoding
+;;               (unless (or (eq buffer-file-coding-system 'utf-8-unix)
+;;                           (eq buffer-file-coding-system 'utf-8)))))
+;; (add-hook 'after-change-major-mode-hook #'doom-modeline-conditional-buffer-encoding)
 
 ;;; config.el ends here
