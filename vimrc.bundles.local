@@ -1,6 +1,7 @@
 " Themes
 Plug 'lifepillar/vim-solarized8'
 " Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'wlads/dracula_pro'
+" Plug 'wlads/dracula_pro'
+Plug 'arcticicestudio/nord-vim'
 " https://github.com/python-mode/python-mode
 Plug 'tyru/open-browser.vim'

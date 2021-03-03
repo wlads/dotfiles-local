@@ -1,5 +1,5 @@
-set -g default-terminal "xterm-256color-italic"
-set -ga terminal-overrides ",xterm-256color-italic:Tc"
+# set -g default-terminal "xterm-256color-italic"
+# set -ga terminal-overrides ",xterm-256color-italic:Tc"
 
 # default prefix to Control + s
 # quick pane cycling

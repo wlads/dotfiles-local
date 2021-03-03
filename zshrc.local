@@ -1,15 +1,16 @@
-export PATH="$HOME/.bin:$HOME/.emacs.d/bin:$PATH"
-source $HOME/.asdf/asdf.sh
+#WB temporarily removed!
+#WB export PATH="$HOME/.bin:$HOME/.emacs.d/bin:$PATH"
+#WB source $HOME/.asdf/asdf.sh
 # append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
+#WB fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
-autoload -Uz compinit
-compinit
+#WB autoload -Uz compinit
+#WB compinit
 
-# configure italic support in terminal
+# configure italic support in terminal (not needed in BigSur)
 # https://www.reddit.com/r/vim/comments/24g8r8/italics_in_terminal_vim_and_tmux/
 # https://hobo.house/2017/07/17/using-italics-with-vim-in-your-terminal/
-export TERM=xterm-256color-italic
+# export TERM=xterm-256color-italic
 
 # Virtualenv/VirtualenvWrapper
 # export WORKON_HOME=~/.virtualenvs
@@ -19,8 +20,8 @@ export TERM=xterm-256color-italic
 # export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 # export ANDROID_HOME=$HOME/Library/Android/sdk
 
-# Mysql
-export PATH=$PATH:/usr/local/mysql/bin
+# Mysql (Not needed when installed using Homebrew)
+# export PATH=$PATH:/usr/local/mysql/bin
 
 # BB Warsaw
 # https://macmagazine.uol.com.br/2017/11/18/o-modulo-de-seguranca-de-bancos-pode-estar-detonando-o-seu-mac-saiba-como-so-ativa-lo-quando-necessario-neste-tutorial/
@@ -28,23 +29,23 @@ export PATH=$PATH:/usr/local/mysql/bin
 # alias bb_disable="sudo launchctl unload -F $HOME/Projects/Scripts/BB/LaunchDaemons_com.diebold.warsaw.plist"
 
 # GoLang
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+#WB export GOPATH=$HOME/go
+#WB export PATH=$PATH:$GOPATH/bin
 # Enable Go modules
-export GO111MODULE=on
+#WB export GO111MODULE=on
 
 # Java
 # Define Java version to use
 # https://upokary.com/how-to-switch-java-versions-in-mac-os/
 # https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-os-x
 # https://gist.github.com/hogmoru/8e02cf826c840914a8ed93fd418ed88e
-export JAVA_HOME=$(/usr/libexec/java_home)
+#WB export JAVA_HOME=$(/usr/libexec/java_home)
 # list available jdks
-alias jdks="/usr/libexec/java_home -V"
-alias jdk8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
-alias jdk8o="export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_232`; java -version"
-alias jdk13="export JAVA_HOME=`/usr/libexec/java_home -v 13`; java -version"
-alias jdk14="export JAVA_HOME=`/usr/libexec/java_home -v 14`; java -version"
+#WB alias jdks="/usr/libexec/java_home -V"
+#WB alias jdk8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+#WB alias jdk8o="export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_232`; java -version"
+#WB alias jdk13="export JAVA_HOME=`/usr/libexec/java_home -v 13`; java -version"
+#WB alias jdk14="export JAVA_HOME=`/usr/libexec/java_home -v 14`; java -version"
 # export PATH=$PATH:$JAVA_HOME/bin
 
 # Config Java's manpath
