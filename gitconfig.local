@@ -4,3 +4,6 @@
 [pull]
   rebase = false
   ff = only
+[alias]
+  lg = log --all --decorate --oneline --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s - %Cgreen(%cr) %C(dim white) - %an%Creset'
+  adog = log --all --decorate --oneline --graph
