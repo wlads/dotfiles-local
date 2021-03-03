@@ -3,6 +3,7 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
+;; ref: https://gitlab.com/dwt1/dotfiles/-/blob/master/.doom.d/config.org
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
@@ -22,13 +23,17 @@
 ;; Don't need to do default setup
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
+;; (setq doom-font (font-spec :family "Mononoki Nerd Font" :size 15)
+;;       doom-variable-pitch-font (font-spec :family "Mononoki Nerd Font" :size 15))
 (setq doom-font (font-spec :family "Dank Mono" :size 15 :weight 'normal))
 
+;; Configure Theme (SPC-h-t)
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-one)
-(setq doom-theme 'doom-dracula)
+(setq doom-theme 'doom-palenight)
+;; (setq doom-theme 'doom-dracula)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -37,7 +42,6 @@
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
-
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
@@ -56,9 +60,17 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
+;; https://github.com/zaiste/.doom.d/blob/master/config.el
+;; (setq
+;;   +doom-dashboard-banner-file (expand-file-name "logo.png" doom-private-dir))
+;;
+;; evil bindings: https://github.com/hlissner/doom-emacs/blob/85b5103cd9c1405b80d0fb5f690588f013a86f98/modules/config/default/%2Bevil-bindings.el#L246
+
 (map! :leader
       (:prefix ("s" . "search")
        :desc "Clear search highlight" "c" #'evil-ex-nohighlight))
+
+;; (def-package! org-super-agenda
 
 ;; Configure mspyls
 ;; https://github.com/hlissner/doom-emacs/blob/develop/modules/lang/python/README.org
@@ -75,5 +87,9 @@
 ;;               (unless (or (eq buffer-file-coding-system 'utf-8-unix)
 ;;                           (eq buffer-file-coding-system 'utf-8)))))
 ;; (add-hook 'after-change-major-mode-hook #'doom-modeline-conditional-buffer-encoding)
+
+;; https://github.com/integral-dw/org-superstar-mode
+(require 'org-superstar)
+(add-hook 'org-mode-hook (lambda () (org-superstar-mode 1)))
 
 ;;; config.el ends here
