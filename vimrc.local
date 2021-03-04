@@ -7,6 +7,7 @@ set nocompatible
 
 " ***************************** nord
 colorscheme nord
+set termguicolors
 
 " ***************************** dracula pro
 " packadd! dracula_pro
