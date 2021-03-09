@@ -2,20 +2,20 @@ set nocompatible
 
 " theme configuration
 " ***************************** solarized dark
-" set background=dark
-" colorscheme solarized8
+set background=dark
+colorscheme solarized8
 
 " ***************************** nord
-colorscheme nord
-set termguicolors
+" colorscheme nord
+" set termguicolors
 
 " ***************************** dracula pro
 " packadd! dracula_pro
-"WB syntax enable
-"WB let g:dracula_colorterm = 0
+"X syntax enable
+"X let g:dracula_colorterm = 0
 " https://github.com/dracula/vim/issues/65
 " let g:dracula_italic = 0
-"WB colorscheme dracula_pro
+"X colorscheme dracula_pro
 " highlight Normal ctermbg=None
 
 " configure italic on comments
