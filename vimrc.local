@@ -18,13 +18,16 @@ colorscheme solarized8
 "X colorscheme dracula_pro
 " highlight Normal ctermbg=None
 
-" configure italic on comments
-" highlight Comment cterm=italic
-
 " if terminal support truecolor (iterm2 and alacritty)
 " if has("termguicolors")
 "   set termguicolors
 " endif
+
+" italic in terminal and comments
+" https://stackoverflow.com/questions/1326998/enabling-italics-in-vim-syntax-highlighting-for-mac-terminal#3338028
+let &t_ZH="\e[3m"
+let &t_ZR="\e[23m"
+highlight Comment cterm=italic
 
 " escape in command mode
 cnoremap kj <C-C>
