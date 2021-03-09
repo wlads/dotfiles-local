@@ -2,8 +2,11 @@ set nocompatible
 
 " theme configuration
 " ***************************** solarized dark
-set background=dark
+" order matters: set termguicolors first
+" other refs: https://vim.fandom.com/wiki/Using_GUI_color_settings_in_a_terminal
+set termguicolors
 colorscheme solarized8
+set background=dark
 
 " ***************************** nord
 " colorscheme nord
