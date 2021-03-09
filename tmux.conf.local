@@ -1,10 +1,14 @@
+# override term config
+set -g default-terminal 'xterm-256color'
+set -g status-style bg='#073642',fg='#839496'
+
 # set -g default-terminal "xterm-256color-italic"
 # set -ga terminal-overrides ",xterm-256color-italic:Tc"
 
 # default prefix to Control + s
 # quick pane cycling
-unbind ^S
-bind ^S select-pane -t :.+
+# unbind ^S
+# bind ^S select-pane -t :.+
 
 # remap prefix to Control + a
 # set -g prefix C-a
@@ -17,11 +21,11 @@ bind ^S select-pane -t :.+
 # bind-key C-h send-prefix
 
 # force a reload of the config file
-unbind r
-bind-key r source-file ~/.tmux.conf
+# unbind r
+# bind-key r source-file ~/.tmux.conf
 
 # configure mouse scroll
-set -g mouse on
+# set -g mouse on
 
 # Tmux Plugin Manager
 # https://github.com/tmux-plugins/tpm
