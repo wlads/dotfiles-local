@@ -1,11 +1,12 @@
 #WB temporarily removed!
 #WB export PATH="$HOME/.bin:$HOME/.emacs.d/bin:$PATH"
-#WB source $HOME/.asdf/asdf.sh
+
+source $HOME/.asdf/asdf.sh
 # append completions to fpath
-#WB fpath=(${ASDF_DIR}/completions $fpath)
+fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
-#WB autoload -Uz compinit
-#WB compinit
+autoload -Uz compinit
+compinit
 
 # configure italic support in terminal (not needed in BigSur)
 # https://www.reddit.com/r/vim/comments/24g8r8/italics_in_terminal_vim_and_tmux/
