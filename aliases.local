@@ -1,0 +1,11 @@
+# Java
+# https://upokary.com/how-to-switch-java-versions-in-mac-os/
+# https://stackoverflow.com/questions/21964709/how-to-set-or-change-the-default-java-jdk-version-on-os-x
+# https://gist.github.com/hogmoru/8e02cf826c840914a8ed93fd418ed88e
+# list available jdks
+alias jdks="/usr/libexec/java_home -V"
+alias jdk8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_281); java -version"
+# alias jdk8o="export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_232`; java -version"
+alias jdk15="export JAVA_HOME=$(/usr/libexec/java_home -v 15); java -version"
+# Removed possible bug when changing java version more than 1x (multiple bins)
+# export PATH=$PATH:$JAVA_HOME/bin
